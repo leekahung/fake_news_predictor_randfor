@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Upload file</title>
+    </head>
+    <body>
+        <p>This web application for fake new prediction accepts .csv files only csv file must contain the follow columns or it won't work: 'id', 'title', 'author', and 'text'. The column 'label' is optional, but would be good to have if you wish to compare actual with predicted results.</p>
+        <form method="POST" action="http://localhost:5000/uploader" enctype="multipart/form-data">
+            <p><input type="file", name="csv_file"/></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
