@@ -13,7 +13,8 @@ vectorizer_files_dir = os.path.join(BASE_DIR, "vectorizer_files")
 model_file = "randfor_model_200_3.joblib"
 vectorizer_file = "tfidf_vectorizer.joblib"
 
-UPLOAD_FOLDER = os.path.join(BASE_DIR, "stored_uploads")
+# Path to Heroku's /tmp directory
+UPLOAD_FOLDER = "/tmp"
 
 # Declare Flask App
 app = Flask(__name__)
