@@ -68,9 +68,13 @@ def upload():
 
     return render_template("predictor.html", tables = [df.to_html()], titles = df.columns.values) 
 
-# Run Flask App
+# Run Web App
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    app.run(debug=True,
-            host="0.0.0.0",
-            port=port)
+    # WSGI production
+    serve(app, host='0.0.0.0', port=port)    
+
+    # Flask testing
+    #app.run(debug=True,
+    #        host="0.0.0.0",
+    #        port=port)
