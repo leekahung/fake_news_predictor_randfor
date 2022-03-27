@@ -6,7 +6,7 @@ import joblib
 import os
 
 # Path to files on web server replacing curr_dir with BASE_DIR
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)))
 
 model_files_dir = os.path.join(BASE_DIR, "model_files")
 vectorizer_files_dir = os.path.join(BASE_DIR, "vectorizer_files")
