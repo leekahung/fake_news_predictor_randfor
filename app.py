@@ -20,8 +20,8 @@ UPLOAD_FOLDER = "/tmp"
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Limiting file size to 100 MB
-app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024
+# Limiting file size to 25 MB
+app.config['MAX_CONTENT_LENGTH'] = 25 * 1024 * 1024
 
 @app.route('/')
 def main():
