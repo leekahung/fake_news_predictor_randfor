@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
+from waitress import serve
 import pandas as pd
 import joblib
 import os
