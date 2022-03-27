@@ -5,7 +5,7 @@
         <title>Upload file</title>
     </head>
     <body>
-        <p>This web application for fake new prediction accepts .csv files only csv file must contain the follow columns or it won't work: 'id', 'title', 'author', and 'text'. The column 'label' is optional, but would be good to have if you wish to compare actual with predicted results.</p>
+        <p>This web application for fake news prediction are currently coded only for .csv files at this time. The csv file must contain the follow columns or it won't work: 'id', 'title', 'author', and 'text'. The column 'label' is optional, but would be good to have if you wish to compare actual with predicted results. The model being used for this web application is Random Forest with an accuracy of 82%.</p>
         <form method="POST" action="http://0.0.0.0:8080/uploader" enctype="multipart/form-data">
             <p><input type="file", name="csv_file"/></p>
             <p><input type="submit" value="Submit"></p>
