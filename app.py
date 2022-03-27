@@ -5,18 +5,18 @@ import pandas as pd
 import joblib
 import os
 
-# Path to files
-curr_dir = os.getcwd()
-model_files_dir = os.path.join(curr_dir, "model_files")
-vectorizer_files_dir = os.path.join(curr_dir, "vectorizer_files")
+# Path to files on web server replacing curr_dir with BASE_DIR
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+model_files_dir = os.path.join(BASE_DIR, "model_files")
+vectorizer_files_dir = os.path.join(BASE_DIR, "vectorizer_files")
 model_file = "randfor_model_200_3.joblib"
 vectorizer_file = "tfidf_vectorizer.joblib"
 
-UPLOAD_FOLDER = os.path.join(curr_dir, "stored_uploads")
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "stored_uploads")
 
 # Declare Flask App
 app = Flask(__name__)
-app.static_folder = os.path.join(curr_dir, "static")
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Limiting file size to 100 MB
