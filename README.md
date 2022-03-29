@@ -1,7 +1,5 @@
-# fake_news_predictor_randfor
+# Fake New Predictor
 
-GitHub for Machine Learning Models for Fake News Prediction. Data set used for training and testing could be found on <a href="https://www.kaggle.com/competitions/fake-news/data">Kaggle</a>, with the training set with a sample size of 20800 and a testing set with a size of 5200.
+This is a GitHub repository for deploying a machine learning model for Fake News prediction on Heroku. Data set used for training and testing could be found on <a href="https://www.kaggle.com/competitions/fake-news/data">Kaggle</a>, with the training set with a sample size of 20800 and a testing set with a size of 5200. Several different models has been tested and analyzed for performance (see Jupyter notebooks under the notebooks directory). The best performing model of the batch was selected for deployment.
 
-Developing model for deployment outside of Jupyter notebook environment using Flask/Heroku.
-
-<a href="https://fake-news-predictor-randfor.herokuapp.com/">Website in Progress</a>
+The deployed model was set up using Flask/Heroku. (see <a href="https://fake-news-predictor-randfor.herokuapp.com/">website</a> in progres)
