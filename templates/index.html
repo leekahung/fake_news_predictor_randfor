@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Fake News Predictor</h1>
-        <p>This web application for fake news prediction are currently coded only for .csv files at this time with a max limit of 25 MB of data <a href="https://github.com/leekahung/fake_news_predictor_randfor">(see main GitHub repository)</a>. The csv file must contain the follow columns or it won't work: 'id', 'title', 'author', and 'text'. The column 'label' is optional, but would be good to have if you wish to compare actual with predicted results. The model being used for this web application is Random Forest with an accuracy of 82%.</p>
+        <p>This web application for fake news prediction are currently coded only for .csv files at this time with a max limit of 25 MB of data <a href="https://github.com/leekahung/fake_news_predictor_randfor">(see main GitHub repository)</a>. The csv file must contain the follow columns or it won't work: 'id', 'title', 'author', and 'text' (see formatted examples from <a href="https://github.com/leekahung/fake_news_predictor_randfor/tree/main/data_files">repository</a> under the names test.csv and train.csv). The column 'label' is optional, but would be good to have if you wish to compare actual with predicted results. The model being used for this web application is Random Forest with an accuracy of 82%.</p>
         <form method="POST" action="https://fake-news-predictor-randfor.herokuapp.com/uploader" enctype="multipart/form-data">
             <p><input type="file", name="csv_file"/></p>
             <p><input type="submit" value="Submit"></p>
