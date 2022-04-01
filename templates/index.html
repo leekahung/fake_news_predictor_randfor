@@ -58,7 +58,7 @@
         <h1>Fake News Predictor</h1>
         <h2>By Ka Hung Lee</h2>
         <p>This web application for fake news prediction are currently coded only for .csv files at this time with a max limit of 25 MB of data <a href="https://github.com/leekahung/fake_news_predictor_randfor">(see main GitHub repository)</a>. The csv file must contain the follow columns or it won't work: 'id', 'title', 'author', and 'text' (see formatted examples from <a href="https://github.com/leekahung/fake_news_predictor_randfor/tree/main/data_files">repository</a> under the names test.csv and train.csv). The column 'label' is optional, but would be good to have if you wish to compare actual with predicted results. The model being used for this web application is Random Forest with an accuracy of 82%. The full details of how the model was derived could be seen from this <a href="https://github.com/leekahung/fake_news_predictor_randfor/blob/main/notebooks/predictive_model_pipeline_for_fake_news.ipynb">notebook</a>.</p>
-        <p>Submit a file below to run the predictor.</p>
+        <p>Submit a file below to run the predictor. (<em><strong>Warning:</strong> First time running may be slow. If application fails, refresh the page to continue running the file.</em>)</p>
         <form method="POST" action="https://fake-news-predictor-randfor.herokuapp.com/uploader" enctype="multipart/form-data">
             <p><input type="file", name="csv_file"/></p>
             <p><input type="submit" value="Submit"></p>
